@@ -1,0 +1,61 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}           <!--Free Shipping Baner-->
+           <div class=container>
+                 <div class="row ">
+               <div class="mt-2 bg-danger fs-3 text-white text-center ">
+                 <P>شحن مجاني عندما يبلغ مجموع مشرياتك 375 ريال وخصم اضافي 10% لأول 50 عملية شراء</P>
+               </div>
+             </div>
+           </div>
+
+<div class="container mt-3">
+       <div class="row">
+           <div class="col-xl-12 col-md-12 col-sm-12">
+              <id id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="~/user/img/ar_slider-01.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="~/user/img/ar_slider-02.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="~/user/img/ar_slider-03.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </id>
+            </div>
+          </div>
+  </div>
+   <!-- cards -->
+   <div class="container">
+     <div class="row mt-3">
+       <div class="col-sm-3">
+          <partial name="_ProductCardsPartial" />
+      </div>
+     <div class="col-sm-3">
+       <partial name="_ProductCardsPartial" />
+    </div>
+   <div class="col-sm-3">
+       <partial name="_ProductCardsPartial" />
+   </div>
+   <div class="col-sm-3">
+        <partial name="_ProductCardsPartial" />
+   </div>
+  </div>
+ </div>

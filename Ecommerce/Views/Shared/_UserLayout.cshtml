@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Ecommerce</title>
+    <!--Bootstrap 5 Dicret Link-->
+    <link rel="stylesheet" href="~/user/css/bootstrap.css">
+    <link rel="stylesheet" href=~/user/css/bootstrap.min.css />
+    <link rel="stylesheet" href="~/user/css/all.css">
+    <link rel="stylesheet" href="~/user/css/site.css">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+</head>
+
+<body dir="rtl">
+
+      <partial name="_HeaderPartial" />
+    
+             @RenderBody()
+  
+      <partial name="_FooterPartial" />
+
+    @await RenderSectionAsync("Scripts", required: false)  
+  
+</body>
+</html>

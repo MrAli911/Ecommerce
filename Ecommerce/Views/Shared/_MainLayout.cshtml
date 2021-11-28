@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Ecommerce</title>
+    <!--Bootstrap 5 Dicret Link-->
+    <link rel="stylesheet" href="~/user/css/bootstrap.css">
+    <link rel="stylesheet" href=~/user/css/bootstrap.min.css />
+    <link rel="stylesheet" href="~/user/css/all.css">
+    <link rel="stylesheet" href="~/user/css/site.css">
+
+    <!---->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+</head>
+
+<body dir="rtl">
+    <header class="container shadow-lg">
+        <nav class="navbar navbar-expand-md ">
+            <a class="navbar-brand" asp-controller="Home" asp-action="index">
+                <img style="max-width: 100px ; max-width:40px" src="~/user/img/logo.png" alt=""
+                     srcset="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <div class="input-group input-group rounded mx-2" style="width: 20rem;">
+                    <input type="search" class="form-control rounded" placeholder="اكتشف المنتجات" aria-label="Search"
+                           aria-describedby="search-addon" />
+                    <span class="input-group-text border-0" id="search-addon">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </div>
+            </div>
+        </nav>       
+    </header>
+             
+             @RenderBody()
+
+  <div class="container mt-2 mb-2">       
+    <footer class="bg-dark text-center text-white">
+     <div class="container p-4 pb-0">
+      <section class="mb-4">
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+         <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+      </section>
+  </div>
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">© 2020 Copyright:<a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+  </div>
+ 
+</footer>
+</div>
+
+         @await RenderSectionAsync("Scripts", required: false)
+  
+</body>
+</html>
